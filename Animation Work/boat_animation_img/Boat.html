@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title> BoAt </title>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		.sky{
+			height: 100vh;
+			width: 100%;	
+			background: url(background.jpg);
+			position: relative;
+		}
+	.water{
+		height: 200px;
+		width: 500%;
+		background-image: url(water.png);
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		animation: water 10s linear infinite;
+		background-repeat: repeat-x;
+	}
+	@keyframes water{
+		0%{
+			transform: translateX(0px);
+		}
+		100%{
+			transform: translateX(-4500px);
+		}
+	}
+	.boAt{
+		
+		width: 250px;
+		
+		position: absolute;
+		bottom: 180px;
+		left: 45%;
+		z-index: 2;
+	}
+	.boAt img{
+	  width: 100%;
+      -webkit-box-reflect: below 0 linear-gradient(rgba(255,255,255,0.1),rgba(255,255,255,0.8)); /*this line means we reflects the image and use rgbs change color of reflect image from dark to light*/
+      }
+	.cloud{
+		height: 250px;
+		background: url(cloud.png);
+		position: relative;
+		padding-top: 100px;
+		animation: cloud 5s linear infinite;
+
+	}
+	@keyframes cloud{
+		0%{
+			transform: translateX(0px);
+		}
+		100%{
+			transform: translateX(500px);
+		}
+	}
+	</style>
+</head>
+<body>
+<div class="sky">
+	<div class="water"></div>
+	<div class="boAt">
+		<img src="boat.png">
+	</div>
+	<div class ="cloud">
+		
+	</div>
+	
+</div>
+</body>
+</html>

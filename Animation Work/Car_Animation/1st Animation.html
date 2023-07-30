@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title> Running car </title>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		.sky{
+			height: 100vh;
+			width: 100%;
+			background-image: url(sky.jpg);
+			background-size: cover;
+			background-position: center;
+			position: relative;
+			overflow-x: hidden;
+		}
+		.Highway{
+			height: 200px;
+			width: 500%;
+			display: block;
+			background-image: url(road.jpg);
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			z-index: 1;
+			background-repeat: repeat-x;
+			animation: Highway 3s linear infinite;
+		}
+		@keyframes Highway
+		{
+ 			100%{
+ 				transform: translateX(-4500px);
+
+ 			}
+		}
+		.city{
+			height: 250px;
+			width: 500%;
+			background-image: url(city.png);
+			position: absolute;
+			bottom: 200px;
+			left: 0;
+			right: 0;
+			display: block;
+			z-index: 1;
+			background-repeat: repeat-x;
+			animation: city 17s linear infinite;
+		}
+		@keyframes city
+		 {
+		 	100%{
+		 		transform: translateX(-1400px);
+		 	}
+		 }
+		 .car{
+		 	
+		 	width: 400px;
+		 	left: 50%;
+		 	bottom: 100px;
+		 	transform: translateX(-50%);
+		 	position: absolute;
+		 	z-index: 2;
+		 }
+
+		 .car img
+		 {
+		 	width: 100%;
+		 	animation: car 1s linear infinite;
+
+		 }
+		 @keyframes car
+		 {
+		 	100%{
+		 		transform: translateY(-1px);
+		 	}
+		 	50%{
+		 		transform: translateY(1px);
+		 	}
+		 	0%{
+		 		transform: translateY(-1px);
+		 	}
+		 }
+		 .wheel{
+		 	width: 40px;
+		 	left: 50%;
+		 	bottom: 181.5px;
+		 	transform: translateX(-50%);
+		 	position: absolute;
+		 	z-index: 2;
+
+		 }
+		 .wheel img
+		 {
+		 	width: 72px;
+		 	height: 72px;
+		 	animation: wheel 1s linear infinite;
+		 }
+		 .Back-wheel{
+		 	left: -145px;
+		 	position: absolute;
+		 }
+		 .Front-wheel{
+		 	left: 100px;
+		 	position: absolute;
+		 }
+		 @keyframes wheel
+		 {
+		 	100%{
+		 		transform: rotate(360deg);
+		 	}
+		 }
+
+		 .plane-3{
+				width: 70px;
+				left: -10%;
+				bottom: 580px;
+				right: 0%;
+				position: absolute;
+				z-index: 2;
+			}
+			.plane-3 img
+		 {
+		 	width: 100%;
+		 	animation: plane 20s linear infinite;
+		 }
+		 @keyframes plane
+		 {
+		 	
+		 	100%{
+		 		left: 110%;
+		 		bottom: 50%;
+		 		transform: translateX(2000px);
+
+		 	}
+		 }
+          
+          </style>
+  </head>
+<body>
+        <div class="sky">
+        	<div class="Highway"> </div>
+        	<div class="city"> </div>
+        	<div class="car">
+        		<img src="car.png">
+        	</div>
+        	<div class="wheel">
+        		<img src="wheel.png" class="Back-wheel">
+        		<img src="wheel.png" class="Front-wheel">
+        	</div>
+        	<div class="plane-3">
+        	 <img src="plane.png">	
+        	</div>
+
+	</div>
+</body>
+</html>

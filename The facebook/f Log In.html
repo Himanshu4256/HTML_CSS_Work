@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title> Log in to facebook </title>
+    <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">        
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <style type="text/css">
+    h1{
+        color: #1778F2;
+        text-align: center;
+        margin-top: 5px;
+        font-size: 50px;
+
+    }
+    .pop{
+        width: 100%;
+        padding: 11px;
+        border: 1px solid lightgray;
+        border-radius: 7px;
+    } 
+    .net{
+        width: 100%;
+        padding: 11px;
+        border: 1px solid lightgray;
+        border-radius: 7px;
+        margin-top: 9px;
+    }
+    .hexa{
+        background-color:  #1778F2;
+        color: white;
+        width: 100%;
+        padding: 11px;
+        border: 0px;
+        border-radius: 7px;
+        margin-top: 9px;
+    } 
+    .star{
+        border: 0px;
+        color: #1778F2;
+        margin-top: 12px;
+        background-color: white;
+    }
+    h5{
+        text-align: center;
+        margin-top: 9px;
+        font-size: 17px;
+        color: gray;
+    } 
+
+    h5:before{
+        
+        content: "";
+        width: 45%;
+        height: 1px;
+        background: #000;
+        position: absolute;
+        left: 0;
+        top: 92%;
+
+
+    }
+
+    h5:after{
+        
+        
+        content: "";
+        width: 45%;
+        height: 1px;
+        background: #000;
+        position: absolute;
+        right: 0;
+        top: 92%;
+    }
+
+
+        .Lambo{
+              
+            margin-left: 90px;
+            margin-top: 0px;
+            color: gray;
+              
+       }
+       .BMW{
+              width: 95%;
+              margin-left: 90px;
+
+           } 
+       .small{
+              width: 33px;
+              border: 1px solid gray;
+              color: gray;
+          }
+
+
+    .rose{
+              
+              font-size: 11px;
+              width: 6%;
+              float: left;
+              border: 0px;
+              background-color: white;
+              margin-left: 79px;
+              font-size: 12px;
+
+       }
+       .Mercedes{
+              width: 5%;
+              float: left;
+              border: 0px;
+              color: black;
+              margin-left: 3px;
+              font-size: 12px;
+              background-color: white;
+              
+       }
+       .Benz{
+              width: 7%;
+              float: left;
+              border: 0px;
+              color: black;
+              margin-left: 3px;
+              font-size: 12px;
+              background-color: white;
+              
+
+       }
+       .car{
+              width: 9%;
+              float: left;
+              border: 0px;
+              color: black;
+              margin-left: 3px;
+              font-size: 12px;
+              background-color: white;
+              
+  
+       }
+       .Jaguar{
+              width: 5%;
+              float: left;
+              border: 0px;
+              color: black;
+              margin-left: 3px;
+              font-size: 12px;
+              background-color: white;
+
+       }
+       .Ford{
+              width: 5%;
+              float: left;
+              border: 0px;
+              color: black;
+              margin-left: 3px;
+              font-size: 12px;
+              background-color: white; 
+              
+
+       }
+       .Verna{
+              width: 5%;
+              float: left;
+              border: 0px;
+              color: black;
+              margin-left: 3px;
+              font-size: 12px;
+              background-color: white;
+        
+       }
+
+
+       .Audi{
+              width: 8%;
+              float: left;
+              border: 0px;
+              color: black;
+              margin-left: 3px;
+              font-size: 12px;
+              background-color: white;
+               
+       }
+       .Mustang{
+              width: 9%;
+              float: left;
+              border: 0px;
+              color: black;
+              margin-left: 3px;
+              font-size: 12px;
+              background-color: white;
+              
+       }
+       .Fortuner{
+              width: 4%;
+              float: left;
+              border: 0px;
+              color: black;
+              margin-left: 3px;
+              font-size: 12px;
+              background-color: white;
+              
+       }
+       .Hexa{
+              width: 5%;
+              float: left;
+              border: 0px;
+              color: black;
+              margin-left: 3px;
+              font-size: 12px;
+              background-color: white;
+              
+       }
+       .KIA{
+              width: 4%;
+              float: left;
+              border: 0px;
+              color: black;
+              margin-left: 3px;
+              font-size: 12px;
+              background-color: white;
+              
+       }
+       .Bugatti{
+              width: 7%;
+              float: left;
+              border: 0px;
+              color: black;
+              margin-left: 3px;
+              font-size: 12px;
+              background-color: white;
+              
+       }
+       .Ferrari{
+              width: 4%;
+              float: left;
+              border: 0px;
+              color: black;
+              margin-left: 3px;
+              font-size: 12px;
+              background-color: white;
+              
+       }
+       .Rolls{
+              width: 7%;
+              float: left;
+              border: 0px;
+              color: black;
+              font-size: 12px;
+              background-color: white;
+              margin-left: 84px;
+              
+       }
+       .Royce{
+              width: 6%;
+              float: left;
+              border: 0px;
+              color: black;
+              font-size: 12px;
+              background-color: white;
+              margin-left: 3px;
+
+       }
+       .Terazo{
+              width: 15%;
+              float: left;
+              border: 0px;
+              color: black;
+              margin-left: 3px;
+              font-size: 12px;
+              background-color: white;
+              
+       }
+       .TATA{
+              width: 5%;
+              float: left;
+              border: 0px;
+              color: black;
+              margin-left: 3px;
+              font-size: 12px;
+              background-color: white;
+              
+       }
+       .Mahendra{ 
+              width: 7%;
+              float: left;
+              border: 0px;
+              color: black;
+              margin-left: 3px;
+              font-size: 12px;
+              background-color: white;
+              
+       }
+       .Rover{
+              width: 8%;
+              float: left;
+              border: 0px;
+              color: black;
+              margin-left: 3px;
+              font-size: 12px;
+              background-color: white;
+       }
+
+       .Thar{
+              width: 8%;
+              float: left;
+              border: 0px;
+              color: black;
+              margin-left: 3px;
+              font-size: 12px;
+              background-color: white;
+       }
+       .Evo{
+              width: 6%;
+              float: left;
+              border: 0px;
+              color: black;
+              margin-left: 3px;
+              font-size: 12px;
+              background-color: white;
+              
+       }
+       .Huracán{
+              width: 6%;
+              float: left;
+              border: 0px;
+              color: black;
+              margin-left: 3px;
+              font-size: 12px;
+              background-color: white;
+              
+       }
+       .Advantador{
+              width: 6%;
+              float: left;
+              border: 0px;
+              color: black;
+              margin-left: 3px;
+              font-size: 12px;
+              background-color: white;
+               
+       }
+       .Urus{
+              width: 7%;
+              float: left;
+              border: 0px;
+              color: black;
+              margin-left: 3px;
+              font-size: 12px;
+              background-color: white;
+              
+       }
+       .SVJ{
+              width: 6%;
+              float: left;
+              border: 0px;
+              color: black;
+              margin-left: 3px;
+              font-size: 12px;
+              background-color: white;
+              
+       }
+       .Spyder{
+              width: 4%;
+              float: left;
+              border: 0px;
+              color: black;
+              font-size: 12px;
+              background-color: white;
+              margin-left: 81px;
+              
+       }
+       .Roadster{
+              width: 10%;
+              float: left;
+              border: 0px;
+              color: black;
+              font-size: 11px;
+              background-color: white;
+              margin-left: 90px;
+              color: gray;
+              margin-top: 10px;
+       }
+       
+
+  </style>
+
+</head>
+<body >
+
+<div style=" background-color: #D9DDDC; padding: 30px; 
+                            margin-left: 0px; margin-right:0px; padding-bottom: 50px; ">
+                           <h1> facebook </h1>
+
+<div style=" background-color: white; padding: 30px; 
+        		    	   border-radius: 8px; margin-left: 485px; margin-right:485px; margin-top: 30px;">
+                       
+                       
+
+        <center><h4> Log in to Facebook</h4></center>
+        
+
+          <div class="container">
+                        <div class="row mt-3">
+                             <div class="col-12">  
+                          <input type="text" placeholder="Email address or phone number" class="pop">
+
+                          <input type="password" placeholder="Password" class="net">
+
+                          <button type="button" class="hexa"><a href="file:///Users/laxminarayansharma/Desktop/Html%20&%20CSS%20Work/The%20facebook/f%20Log%20In.html" target="_blank"> <font color="white">
+                              Log In
+                          </font></a></button>
+
+                       <center><button type="button" class="star"><a href="file:///Users/laxminarayansharma/Desktop/Html%20&%20CSS%20Work/The%20facebook/f%20Forgot%20password.html"> <font color="#1778F2">
+                              Forgotten account?
+                          </font></a></button></center>
+                          
+                          <h5>or</h5> </div>
+                        <div>   <button type="login" value="login" class="w-40 pad" style="background-color: #18b00b; border-radius: 7px;margin-left: 88px; padding: 11px; padding-left: 15px;padding-right: 15px; border: 0px; color:white;"> <a href="file:///Users/laxminarayansharma/Desktop/Html%20&%20CSS%20Work/The%20facebook/create%20acc.html"> <font color="white"> Create New Account  </font></a></button> 
+
+                        </div>              
+                         
+                          
+
+</div>
+          </div>
+      </div>
+  </div>
+
+
+
+
+
+
+
+      <div  style=" background-color: white ; padding: 5px; padding-bottom:0px;padding-top:9px; margin-left: 0px; margin-right:0px; margin-top: 94px; ">  
+                                       
+                               <div class="container">
+                                   <div class="row mt-3">
+                                          <div class="col-12">
+                                                  
+                                                  <p class="Lambo"> English(UK) &nbsp; हिन्दी &nbsp; اردو &nbsp; ਪੰਜਾਬੀ &nbsp; বাংলা &nbsp; ગુજરાતી &nbsp; मराठी &nbsp; தமிழ் &nbsp; తెలుగు &nbsp; മലയാളം &nbsp; ಕನ್ನಡ &nbsp; <button  type="click here" value="click"class="small"> <div title="Show more languages"> + </div></button>
+                                                  </p>
+
+<hr class="BMW">
+      
+      <p>
+           <button  type="button" class="rose"> <a href ="https://www.facebook.com/r.php"> <font color="gray"> Sign Up </font></a></button>
+      </p>
+
+      <p>
+           <button  type="button" class="Mercedes"> <a href ="https://www.facebook.com/login/"> <font color="gray"> Log In </font></a></button>
+      </p>
+
+      <p>
+           <button  type="button" class="Benz"> <a href ="https://www.messenger.com/"> <font color="gray"> Messenger </font></a></button>
+      </p>
+
+      <p>
+           <button  type="button" class="car"> <a href ="https://www.facebook.com/lite/"> <font color="gray"> Facebook Lite </font></a></button>
+      </p>
+
+      <p>
+           <button  type="button" class="Jaguar"> <a href ="https://www.facebook.com/watch/"> <font color="gray"> Watch </font></a></button>
+      </p>
+
+      <p>
+           <button  type="button" class="Ford"> <a href ="https://www.facebook.com/places/"> <font color="gray"> Places </font></a></button>
+      </p>
+
+      <p>
+           <button  type="button" class="Verna"> <a href ="https://www.facebook.com/games/"> <font color="gray"> Games </font></a></button>
+      </p>
+
+      <p>
+           <button  type="button" class="Audi"> <a href ="https://www.facebook.com/marketplace/"> <font color="gray"> Marketplace </font></a></button>
+      </p>
+
+      <p>
+           <button  type="button" class="Mustang"> <a href ="https://pay.facebook.com/" target="_blank"> <font color="gray"> Facebook Pay </font></a></button>
+      </p>
+
+      <p>
+           <button  type="button" class="Fortuner"> <a href ="https://www.facebook.com/jobs/"> <font color="gray"> Jobs </font></a></button>
+      </p>
+
+      <p>
+           <button  type="button" class="Hexa"> <a href ="https://www.oculus.com/" target="_blank"> <font color="gray"> Occulus </font></a></button>
+      </p>
+
+      <p>
+           <button  type="button" class="KIA"> <a href ="https://portal.facebook.com/" target="_blank"> <font color="gray"> Portal </font></a></button>
+      </p>
+
+      <p>
+           <button  type="button" class="Bugatti"> <a href ="https://www.instagram.com/"  target="_blank"> <font color="gray"> Instagram </font></a></button>
+      </p>
+
+      <p>
+           <button  type="button" class="Ferrari"> <a href ="https://www.facebook.com/local/lists/245019872666104/"> <font color="gray" > Local </button>
+      </p><br>
+
+     <div> 
+           <button  type="button" class="Rolls" > <a href ="https://www.facebook.com/fundraisers/"> <font color="gray"> Fundraisers </font></a></button>
+     </div>
+
+      <div>
+           <button  type="button" class="Royce" > <a href ="https://www.facebook.com/biz/directory/"> <font color="gray"> Services </font></a></button>
+      </div>
+
+      <div>
+           <button  type="button" class="Terazo"> <a href ="https://www.facebook.com/votinginformationcenter/"> <font color="gray">Voting Information Center </font></a></button>
+      </div>
+
+      <div>
+           <button  type="button" class="TATA"> <a href ="https://about.facebook.com/"> <font color="gray"> About </font></a></button>
+      </div>
+
+      <div>
+           <button  type="button" class="Mahendra"> <a href ="https://www.facebook.com/login.php?next=https%3A%2F%2Fwww.facebook.com%2Fads%2Fcreate%2F%3Fnav_source%3Dunknown%26campaign_id%3D402047449186%26placement%3Dpflo%26extra_1%3Dnot-admgr-user"> <font color="gray">Create ad </font></a></button>
+      </div>
+
+      <div>
+           <button  type="button" class="Rover"> <a href ="https://www.facebook.com/pages/create/?ref_type=site_footer"> <font color="gray"> Create Page </font></a></button>
+      </div>
+
+      <div>
+           <button  type="button" class="Thar"> <a href ="https://developers.facebook.com/?ref=pf"> <font color="gray"> Developers </font></a></button>
+      </div>
+
+      <div>
+           <button  type="button" class="Evo"> <a href ="https://www.facebook.com/careers/?ref=pf"> <font color="gray"> Careers </font></a></button>
+      </div>
+
+      <div>
+           <button  type="button" class="Huracán"> <a href ="https://www.facebook.com/privacy/explanation"> <font color="gray"> Privacy </font></a></button>
+      </div>
+
+      <div>
+           <button  type="button" class="Advantador"> <a href ="https://www.facebook.com/policies/cookies/"> <font color="gray"> Cookies </font></a></button>
+      </div>
+
+      <div>
+           <button  type="button" class="Urus"> <a href ="https://www.facebook.com/help/568137493302217"> <font color="gray"> AdChoices▷ </font></a></button>
+      </div>
+
+      <div>
+           <button  type="button" class="SVJ"> <a href ="https://www.facebook.com/policies_center/"> <font color="gray"> Terms </font></a></button>
+      </div><br>
+
+      <div>
+           <button  type="button" class="Spyder"> <a href ="https://www.facebook.com/help/?ref=pf"> <font color="gray"> Help </font></a></button>
+      </div><br>
+
+      <p class="Roadster">
+          Meta © 2022
+      </p>
+      
+</p>   
+                                                  
+                     </div>
+
+
+              </div>
+             </div>
+
+          </div>
+</body>
+</html>
