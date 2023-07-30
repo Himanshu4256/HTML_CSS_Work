@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>cursor</title>
+	<style type="text/css">
+		body{
+			font-family: arial,helvetioa;
+		}
+		#box1{
+			border: 1px solid black;
+			background: #f0f8ff;
+			text-align: center;
+			width: 200px;
+			height: 200px;
+			cursor: alias;
+			float: right;
+		}
+		#box2{
+			border: 1px solid black;
+			background: #0000ff;
+			text-align: center;
+			width: 200px;
+			height: 200px;
+			cursor: all-scroll;
+			float: right;
+		}
+		#box3{
+			border: 1px solid black;
+			background: blueviolet;
+			text-align: center;
+			width: 200px;
+			height: 200px;
+			cursor: auto;
+			float: right;
+		}
+		#box4{
+			border: 1px solid black;
+			background: #7fffd4	;
+			text-align: center;
+			width: 200px;
+			height: 200px;
+			cursor: cell;
+			float: right;
+		}
+		#box5{
+			border: 1px solid black;
+			background: #a52a2a;
+			text-align: center;
+			width: 200px;
+			height: 200px;
+			cursor: context-menu;
+			float: right;
+		}
+		#box6{
+			border: 1px solid black;
+			background: #deb887;
+			text-align: center;
+			width: 200px;
+			height: 200px;
+			cursor: col-resize;
+			float: right;
+		}
+		#box7{
+			border: 1px solid black;
+			background: #5f9ea0	;
+			text-align: center;
+			width: 200px;
+			height: 200px;
+			cursor: copy;
+			float: right;
+		}
+		#box8{
+			border: 1px solid black;
+			background: #7fff00	;
+			text-align: center;
+			width: 200px;
+			height: 200px;
+			cursor: crosshair;
+			float: right;
+		}
+		#box9{
+			border: 1px solid black;
+			background: #d2691e	;
+			text-align: center;
+			width: 200px;
+			height: 200px;
+			cursor: default;
+			float: right;
+		}
+		#box_a{
+			border: 1px solid black;
+			background: #ff7f50	;
+			text-align: center;
+			width: 200px;
+			height: 200px;
+			cursor: e-resize;
+			float: right;
+		}
+		#box_b{
+			border: 1px solid black;
+			background: #6495ed	;
+			text-align: center;
+			width: 200px;
+			height: 200px;
+			cursor: em-resize;
+			float: right;
+		}
+		#box_c{
+			border: 1px solid black;
+			background: #a9a9a9		;
+			text-align: center;
+			width: 200px;
+			height: 200px;
+			cursor: grab;
+			float: right;
+		}
+		#box_d{
+			border: 1px solid black;
+			background: #fff8dc	;
+			text-align: center;
+			width: 200px;
+			height: 200px;
+			cursor: grabbing;
+			float: right;
+		}
+		#box_e{
+			border: 1px solid black;
+			background: #00ffff	;
+			text-align: center;
+			width: 200px;
+			height: 200px;
+			cursor: help;
+			float: right;
+		}
+		#box_f{
+			border: 1px solid black;
+			background: #00ffff;
+			text-align: center;
+			width: 200px;
+			height: 200px;
+			cursor: move;
+			float: right;
+		}
+		#box_g{
+			border: 1px solid black;
+			background: #dc143c	;
+			text-align: center;
+			width: 200px;
+			height: 200px;
+			cursor: n-resize;
+			float: right;
+		}
+		#box_h{
+			border: 1px solid black;
+			background: #00008b	;
+			text-align: center;
+			width: 200px;
+			height: 200px;
+			cursor: ne-resize;
+			float: right;
+		}
+		#box_i{
+			border: 1px solid black;
+			background:#008b8b;
+			text-align: center;
+			width: 200px;
+			height: 200px;
+			cursor: nesw-resize;
+			float: right;
+		}
+		#box_j{
+			border: 1px solid black;
+			background:	#1e90ff ;
+			text-align: center;
+			width: 200px;
+			height: 200px;
+			cursor: ns-resize;
+			float: right;
+		}
+		#box_k{
+			border: 1px solid black;
+			background: #b22222;
+			text-align: center;
+			width: 200px;
+			height: 200px;
+			cursor: nw-resize;
+			float: right;
+		}
+		#box_l{
+			border: 1px solid black;
+			background:#fffaf0 ;
+			text-align: center;
+			width: 200px;
+			height: 200px;
+			cursor: nwse-resize;
+			float: right;
+		}
+		#box_m{
+			border: 1px solid black;
+			background: #228b22	;
+			text-align: center;
+			width: 200px;
+			height: 200px;
+			cursor: no-drop;
+			float: right;
+		}
+		#box_n{
+			border: 1px solid black;
+			background:	#ff00ff;
+			text-align: center;
+			width: 200px;
+			height: 200px;
+			cursor: none;
+			float: right;
+		}
+		#box_o{
+			border: 1px solid black;
+			background:#fffaf0;
+			text-align: center;
+			width: 200px;
+			height: 200px;
+			cursor: not-allowed;
+			float: right;
+		}
+		#box_p{
+			border: 1px solid black;
+			background:	#98fb98;
+			text-align: center;
+			width: 200px;
+			height: 200px;
+			cursor: pointer;
+			float: right;
+		}
+		#box_q{
+			border: 1px solid black;
+			background:	#ff00ff;
+			text-align: center;
+			width: 200px;
+			height: 200px;
+			cursor: progress;
+			float: right;
+		}
+		#box_r{
+			border: 1px solid black;
+			background: #dcdcdc	;
+			text-align: center;
+			width: 200px;
+			height: 200px;
+			cursor: row-resize;
+			float: right;
+		}
+		#box_s{
+			border: 1px solid black;
+			background:	#f8f8ff	;
+			text-align: center;
+			width: 200px;
+			height: 200px;
+			cursor: s-resize;
+			float: right;
+		}
+		#box_t{
+			border: 1px solid black;
+			background:	#ffd700	;
+			text-align: center;
+			width: 200px;
+			height: 200px;
+			cursor: se-resize;
+			float: right;
+		}
+		#box_u{
+			border: 1px solid black;
+			background:	#daa520	;
+			text-align: center;
+			width: 200px;
+			height: 200px;
+			cursor: sw-resize;
+			float: right;
+		}
+		#box_v{
+			border: 1px solid black;
+			background:	#808080	;
+			text-align: center;
+			width: 200px;
+			height: 200px;
+			cursor: text;
+			float: right;
+		}
+		#box_w{
+			border: 1px solid black;
+			background: #808080	;
+			text-align: center;
+			width: 200px;
+			height: 200px;
+			cursor: url;
+			float: right;
+		}
+		#box_x{
+			border: 1px solid black;
+			background:	#1e90ff	;
+			text-align: center;
+			width: 200px;
+			height: 200px;
+			cursor: w-resize;
+			float: right;
+		}
+		#box_y{
+			border: 1px solid black;
+			background:	#008000	;
+			text-align: center;
+			width: 200px;
+			height: 200px;
+			cursor: wait;
+			float: right;
+		}
+		#box_z{
+			border: 1px solid black;
+			background:	#adff2f	;
+			text-align: center;
+			width: 200px;
+			height: 200px;
+			cursor: zoom-in;
+			float: right;
+		}
+		#box_ze{
+			border: 1px solid black;
+			background:	#f0e68c	;
+			text-align: center;
+			width: 200px;
+			height: 200px;
+			cursor: zoom-out;
+			float: right;
+		}
+
+	</style>
+</head>
+<body>
+<center><h1><u>cursor properties</u></h1></center>
+<div id="box1">
+	<h2>alias</h2>
+</div>
+<div id="box2">
+	<h2>all-scroll</h2>
+</div>
+<div id="box3">
+	<h2>auto</h2>
+</div>
+<div id="box4">
+	<h2>cell</h2>
+</div>
+<div id="box4">
+	<h2>context-menu</h2>
+</div>
+<div id="box5">
+	<h2>col-resize</h2>
+</div>
+<div id="box6">
+	<h2>copy</h2>
+</div>
+<div id="box7">
+	<h2>crosshair</h2>
+</div>
+<div id="box8">
+	<h2>Hover the div</h2>
+</div>
+<div id="box9">
+	<h2>Hover the div</h2>
+</div>
+<div id="box_a">
+	<h2>Hover the div</h2>
+</div>
+<div id="box_b">
+	<h2>Hover the div</h2>
+</div>
+<div id="box_c">
+	<h2>Hover the div</h2>
+</div>
+<div id="box_d">
+	<h2>Hover the div</h2>
+</div>
+<div id="box_e">
+	<h2>Hover the div</h2>
+</div>
+<div id="box_f">
+	<h2>Hover the div</h2>
+</div>
+<div id="box_g">
+	<h2>Hover the div</h2>
+</div>
+<div id="box_h">
+	<h2>Hover the div</h2>
+</div>
+<div id="box_i">
+	<h2>Hover the div</h2>
+</div>
+<div id="box_j">
+	<h2>Hover the div</h2>
+</div>
+<div id="box_k">
+	<h2>Hover the div</h2>
+</div>
+<div id="box_l">
+	<h2>Hover the div</h2>
+</div>
+<div id="box_m">
+	<h2>no-drop</h2>
+</div>
+<div id="box_n">
+	<h2>none</h2>
+</div>
+<div id="box_o">
+	<h2>Hover the div</h2>
+</div>
+<div id="box_p">
+	<h2>pointer</h2>
+</div>
+<div id="box_q">
+	<h2>progress</h2>
+</div>
+<div id="box_r">
+	<h2>Hover the div</h2>
+</div>
+<div id="box_s">
+	<h2>Hover the div</h2>
+</div>
+<div id="box_t">
+	<h2>Hover the div</h2>
+</div>
+<div id="box_u">
+	<h2>Hover the div</h2>
+</div>
+<div id="box_v">
+	<h2>Hover the div</h2>
+</div>
+<div id="box_x">
+	<h2>w-resize</h2>
+</div>
+<div id="box_y">
+	<h2>wait</h2>
+</div>
+<div id="box_z">
+	<h2>Hover the div</h2>
+</div>
+<div id="box_ze">
+	<h2>Hover the div</h2>
+</div>
+</body>
+</html>
